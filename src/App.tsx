@@ -1,9 +1,8 @@
 import {
   Routes,
   Route,
-  Navigate
 } from "react-router-dom";
-import AuthProvider, { useAuth } from "./Components/Auth";
+import AuthProvider from "./Components/Auth";
 import Login from "./Components/Login";
 import Navbar from "./Components/Navbar";
 import PageA from "./Components/PageA";
@@ -11,9 +10,7 @@ import PageB from "./Components/PageB";
 import PageC from "./Components/PageC";
 import { AlreadyAuth, RequireAuth } from "./Components/ProtectedAuth";
 
-
 function App() {
-  const auth = useAuth()
   return (
     <div className="App">
       <AuthProvider>

@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import '../css/Login.css'
 import { useAuth } from "./Auth";
+
 const Login = () => {
     const auth = useAuth()
     const navigate = useNavigate()
@@ -15,12 +16,12 @@ const Login = () => {
     }
     const handleLogin = () => {
         if (username.length > 0) {
+            localStorage.setItem('user', username)
             auth?.login(username)
             navigate(redirectPath, { replace: true })
         } else
             alert('Invalid username!')
     }
-
     return (
         <div className="container fontLink">
             <p className="title">Login</p>

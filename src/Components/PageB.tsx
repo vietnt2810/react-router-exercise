@@ -1,12 +1,9 @@
-import { useAuth } from './Auth'
-
 const PageB = () => {
-  const auth = useAuth();
-  
+  const data = localStorage.getItem('user')
   return (
     <div>
-      {!auth?.user && <p>Hello world!</p>}
-      {auth?.user && <p>Welcome back user {auth.user}, this is pageB</p>}
+      {!data && <p>Hello world!</p>}
+      {data && <p>Welcome back user {data}, this is pageB</p>}
     </div>
   )
 }
