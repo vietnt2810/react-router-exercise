@@ -1,0 +1,55 @@
+.container {
+    width: 33%;
+    max-width: 350px;
+    height: auto;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(119, 97, 97), -1px -1px 10px rgb(119, 97, 97);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    /* padding: 30px 0; */
+    transform: scale(1.1, 1);
+
+}
+
+.accountInfo {
+    margin-bottom: 10px;
+    transform: scale(1, .85);
+    color: #505050;
+}
+
+.accountInfoHolder {
+    display: flex;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 10px;
+}
+
+.accountInfoHolder>.icon {
+    padding: 0 5px;
+    color: #c0c0c0;
+}
+
+.accountInfoHolder>.accountInput {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.loginButton {
+    font-weight: bold;
+    width: 100%;
+    margin: 20px 0 30px;
+    padding: 10px 0;
+    border: none;
+    background-color: bisque;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
